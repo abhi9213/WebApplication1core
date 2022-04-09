@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<h1>view bag example</h1>
+<h1>@ViewBag.test1</h1>
+<h1>@ViewBag.test2</h1>
+<h1>@ViewBag.test3</h1>
+<h1>@ViewBag.test4</h1>
+
+@foreach(string i in ViewBag.List)
+{
+    <li>@i</li>
+}
+

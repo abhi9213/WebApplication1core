@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "tdata";
+}
+
+<h2>@TempData["head"]</h2>
+<h2>@TempData["id"]</h2>
+<h2>@TempData["name"]</h2>
+<h2>@TempData["per"]</h2>
+<h2>@TempData["time"]</h2>
+
+<ul>
+    @foreach(var i in  (List<string>)TempData["list"])
+    {
+        <li>@i</li>
+    }
+
+</ul>
+ 
+
+

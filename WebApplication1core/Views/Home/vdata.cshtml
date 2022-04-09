@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "vdata";
+}
+
+<h1>view data examples</h1>
+
+<h1>@ViewData["id"]</h1>
+<h1>@ViewData["name"]</h1>
+<h1>@ViewData["per"]</h1>
+<h1>@ViewData["time"]</h1>
+
+@foreach(var i in (List<string>)ViewData["list"])
+{
+    <li>@i</li>
+}
+
+
+
+
